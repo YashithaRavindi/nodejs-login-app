@@ -1,18 +1,21 @@
 <h1>Register</h1> <br>
-<form action="register" method="post">
+<% if (messages.error) { %>
+    <%= messages.error %>
+    <% } %>
+<form action="signup" method="POST">
 <div>
 <label for="name">Name</label>
-<input type="text" id="name" name="name" required> <br> <br>
+<input required type="text" id="name" name="name"> <br> <br>
 </div>
 
 <div>
 <label for="email">email</label>
-<input type="email" id="email" name="email">
+<input required type="email" id="email" name="email">
 </div>
 
 <div>
 <label for="password">Password</label>
-<input type="password" id="password" name="password" required>
+<input required type="password" id="password" name="password">
 </div>
 <button type="submit">Register</button>
 </form>
