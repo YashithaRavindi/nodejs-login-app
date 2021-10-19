@@ -47,9 +47,14 @@ app.get('/signup', (req, res) => {
 })
 
 app.post('/signup', (req, res) => {
-    const name = req.body.name;
+    const firstname = req.body.firstname;
+    const lastname = req.body.lastname;
+    const country = req.body.country;
+    const ainterest = req.body.ainterest;
     const email = req.body.email;
     const password = req.body.password;
+
+    // Checking if the email is already available
     sql.query('SELECT * FROM users WHERE email = ?;',[email], (err, result) => {
       if(err) {
         res.render("register.ejs", { error_msg: err})
@@ -59,9 +64,12 @@ app.post('/signup', (req, res) => {
       } else {
         bcrypt.hash(password, 10,(err, data) => {
           if(err) console.error(err)
-          sql.query(`INSERT INTO users ( name, email , password ) VALUES ( '${name}' , '${email}', '${data}')`, (err) => {
+          sql.query(`INSERT INTO users ( email , password ) VALUES ('${email}', '${data}')`, (err) => {
               if(err) console.log(err)
           })
+          sql.query(`INSERT INTO personalinfo ( firstname , lastname, ainterest, country ) VALUES ('${firstname}', '${lastname}', '${ainterest}', '${country}')`, (err) => {
+            if(err) console.log(err)
+        })
           sql.query('SELECT * FROM users WHERE email = ?;',[email], (err, result) => {
             if(err) {
               res.render("register.ejs", { error_msg: err})
