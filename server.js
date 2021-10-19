@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt')
-const bodyParser = require('body-parser')
 const PORT = process.env.PORT || 3000;
 const sql = require('./sql/sql');
 const flash = require('express-flash')
@@ -16,8 +15,8 @@ app.use(session({
 }))
 
 app.set('view engine', 'ejs')
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json());
 
 
 app.get('/', (req,res) => {
@@ -90,7 +89,7 @@ app.post('/signup', (req, res) => {
 app.post('/login', (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
-    sql.query('SELECT * FROM users WHERE username = ?;',[email], (err, result) => {
+    sql.query('SELECT * FROM users WHERE email = ?;',[email], (err, result) => {
         if(err) {
           res.render("login.ejs", { error_msg: err})
         }
