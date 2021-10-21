@@ -17,7 +17,9 @@ app.use(session({
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
-
+var path = require('path');
+var dir = path.join(__dirname, 'views/');
+app.use(express.static(dir));
 
 app.get('/', (req,res) => {
     if(req.session.user) {
@@ -32,7 +34,7 @@ app.get('/', (req,res) => {
 
 app.get('/Login', (req, res) => {
     if(!req.session.user) {
-        res.render('login.ejs', {error_msg:""})
+        res.render('login', {error_msg:""})
     } else {
         res.redirect('/')
     }
