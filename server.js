@@ -22,13 +22,24 @@ var dir = path.join(__dirname, 'views/');
 app.use(express.static(dir));
 
 app.get('/', (req,res) => {
-    if(req.session.user) {
-        res.render('index', {
-            name: req.session.user[0].name
-        })
-    } else {
-        res.redirect('/Login')
+  if(req.session.user) {
+    if(req.session.user[0].isAdmin === 0){ 
+      res.render('index', {
+        name: req.session.user[0].name
+
     }
+      
+      )}
+
+      else{
+        res.render('index2', {
+          name: req.session.user[0].name
+  
+      }
+        )}
+  } else {
+      res.redirect('/Login')
+  }
 })
 
 
@@ -55,6 +66,8 @@ app.post('/signup', (req, res) => {
     const ainterest = req.body.ainterest;
     const email = req.body.email;
     const password = req.body.password;
+    const isadmin = req.body.isadmin;
+
 
     // Checking if the email is already available
     sql.query('SELECT * FROM users WHERE email = ?;',[email], (err, result) => {
@@ -66,12 +79,12 @@ app.post('/signup', (req, res) => {
       } else {
         bcrypt.hash(password, 10,(err, data) => {
           if(err) console.error(err)
-          sql.query(`INSERT INTO users ( email , password ) VALUES ('${email}', '${data}')`, (err) => {
+          sql.query(`INSERT INTO users ( email , password, isAdmin ) VALUES ('${email}', '${data}', '${isadmin}')`, (err) => {
               if(err) console.log(err)
           })
-          sql.query(`INSERT INTO personalinfo ( firstname , lastname, ainterest, country ) VALUES ('${firstname}', '${lastname}', '${ainterest}', '${country}')`, (err) => {
-            if(err) console.log(err)
-        })
+        /*  
+         
+        */
           sql.query('SELECT * FROM users WHERE email = ?;',[email], (err, result) => {
             if(err) {
               res.render("register.ejs", { error_msg: err})
@@ -90,7 +103,10 @@ app.post('/signup', (req, res) => {
             }
           }
         ) 
-      }) 
+      })
+      sql.query(`INSERT INTO personalinfo ( firstname , lastname, ainterest, country ) VALUES ('${firstname}', '${lastname}', '${ainterest}', '${country}')`, (err) => {
+        if(err) console.log(err)
+    }) 
       }
     }
   )
@@ -107,6 +123,7 @@ app.post('/login', (req, res) => {
           bcrypt.compare(password,result[0].password, (err,response) => {
             if(response) {
               req.session.user = result;
+              console.log(req.session.user[0].isAdmin)
               res.redirect('/')
             } else {
               res.render("login.ejs", { error_msg: "Credentials Are Invalid"})
