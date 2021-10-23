@@ -8,4 +8,4 @@ const sql = mysql.createConnection({
 sql.connect((err) => {
   if (err) console.log(err);
 });
-module.exports=sql
+module.exports = sql;

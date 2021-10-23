@@ -1,0 +1,65 @@
+{
+  level: 'info',
+  message: 'no active session. redirect to login',
+  timestamp: '2021-10-23T15:23:17.249Z'
+}
+{
+  level: 'info',
+  message: 'user Saman registered.',
+  timestamp: '2021-10-23T15:24:08.132Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:24:08.351Z'
+}
+{
+  level: 'info',
+  message: 'user Saman registered.',
+  timestamp: '2021-10-23T15:25:46.701Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:25:46.768Z'
+}
+{
+  level: 'info',
+  message: 'user Kasun registered.',
+  timestamp: '2021-10-23T15:26:19.332Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:26:19.399Z'
+}
+{
+  level: 'info',
+  message: 'user ruwan registered.',
+  timestamp: '2021-10-23T15:27:54.543Z'
+}
+{
+  level: 'info',
+  message: 'user 52 logged in session id: kqajB-ogl3OaOuSRizD0m-wWDR8n5hll',
+  timestamp: '2021-10-23T15:27:54.911Z'
+}
+{
+  level: 'error',
+  message: 'unsuccessful login attempt email ruwan@gmail.com does not exist.',
+  timestamp: '2021-10-23T15:29:27.720Z'
+}
+{
+  level: 'info',
+  message: 'user 52 logged in session id: Unhbc0uymcx9RkI4dNNcwl3WpFRUJJVY',
+  timestamp: '2021-10-23T15:29:39.014Z'
+}
+{
+  level: 'info',
+  message: 'user Mary registered.',
+  timestamp: '2021-10-23T15:30:32.804Z'
+}
+{
+  level: 'info',
+  message: 'user undefined logged in. session id: kKvpPoUbYzIhyo_3ZrU-_FtslHrVarWf',
+  timestamp: '2021-10-23T15:30:33.180Z'
+}

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/login.css" type="text/css" >
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,17 +22,17 @@
   <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
 </head>
 <body>
-  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-8">
     <div class="container">
       <div class="card login-card">
         <div class="row no-gutters">
-          <div class="col-md-5">
-            <img src="assets/images/login.jpg" alt="login" class="login-card-img">
+          <div class="col-md-6">
+            <img src="assets/images/login_image.jpg" alt="login" class="login-card-img">
           </div>
-          <div class="col-md-7">
+          <div class="col-md-">
             <div class="card-body">
               <div class="brand-wrapper">
-                <img src="assets/images/logo.svg" alt="logo" class="logo">
+                <img src="assets/images/wileylogo.png" alt="logo" class="logo">
               </div>
               <p class="login-card-description">Create your account</p>
               <form autocomplete="off" method="POST">
@@ -59,8 +59,18 @@
                 <div class="form-group">
                   <label for="ainterest">Area of Interest</label>
                   <select class="form-control" id="ainterest" name="ainterest">
-                    <option value="" selected="selected">Select Area of Interest</option>
-                    <option value="" selected="selected">Maths</option>
+                    <option value="Select Area of Interest" selected="selected">Select Area of Interest</option>
+                    <option value="Accounting" selected="selected">Accounting</option>
+                    <option value="Biology" selected="selected">Biology</option>
+                    <option value="Chemistry" selected="selected">Chemistry</option>
+                    <option value="Economics" selected="selected">Economics</option>
+                    <option value="Finance" selected="selected">Finance</option>
+                    <option value="History" selected="selected">History</option>
+                    <option value="Literature" selected="selected">Literature</option>
+                    <option value="Physics" selected="selected">Physics</option>
+                    <option value="Management" selected="selected">Management</option>
+                    <option value="Marketing" selected="selected">Marketing</option>
+                    <option value="Mathematics" selected="selected">Mathematics</option>
                   </select>
                   </div>
 
@@ -70,21 +80,21 @@
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
-                    <input required type="password" name="password" class="form-control" id="password" placeholder="Create your password">
+                    <input required type="password" name="password" required minlength="8" class="form-control" id="password" placeholder="Create your password">
                   </div>
           
-                  <div class="form-check">
-                    <label class="form-check-label" for="isadmin">
-                      Register as an Admin user
+                  <div class="checkbox">
+                    <label class="form-check-label check-space" for="isadmin">
+                      <input class="form-check-input check-space" type="checkbox" value="1" id="isadmin" name="isadmin">
+                          Register as an Admin user
                     </label>
-                    <input class="form-check-input" type="checkbox" value="1" id="isadmin" name="isadmin">
-                  </div> <br>
-          
-                  <div class="form-check">
-                    <input class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">  I have read and accept the Wiley Online Library Terms & Conditions of Use and Wiley Privacy Policy
+                  </div>
+                  <input class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
+                  <div class="checkbox">
+                    
+                    <label class="form-check-label " for="flexCheckDefault">  I have read and accept the Wiley Online Library Terms & Conditions of Use and Wiley Privacy Policy
                     </label>
-                  </div> <br>
+                  </div> <br> <br> <br>
         
                   <div class="form-group">
                   <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Register">
@@ -121,7 +131,6 @@
           <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
         </div>
       </div> -->
-    </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
