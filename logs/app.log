@@ -1,0 +1,120 @@
+{
+  level: 'info',
+  message: 'no active session. redirect to login',
+  timestamp: '2021-10-23T15:23:17.249Z'
+}
+{
+  level: 'info',
+  message: 'user Saman registered.',
+  timestamp: '2021-10-23T15:24:08.132Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:24:08.351Z'
+}
+{
+  level: 'info',
+  message: 'user Saman registered.',
+  timestamp: '2021-10-23T15:25:46.701Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:25:46.768Z'
+}
+{
+  level: 'info',
+  message: 'user Kasun registered.',
+  timestamp: '2021-10-23T15:26:19.332Z'
+}
+{
+  level: 'error',
+  message: 'can not insert to sql database',
+  timestamp: '2021-10-23T15:26:19.399Z'
+}
+{
+  level: 'info',
+  message: 'user ruwan registered.',
+  timestamp: '2021-10-23T15:27:54.543Z'
+}
+{
+  level: 'info',
+  message: 'user 52 logged in session id: kqajB-ogl3OaOuSRizD0m-wWDR8n5hll',
+  timestamp: '2021-10-23T15:27:54.911Z'
+}
+{
+  level: 'error',
+  message: 'unsuccessful login attempt email ruwan@gmail.com does not exist.',
+  timestamp: '2021-10-23T15:29:27.720Z'
+}
+{
+  level: 'info',
+  message: 'user 52 logged in session id: Unhbc0uymcx9RkI4dNNcwl3WpFRUJJVY',
+  timestamp: '2021-10-23T15:29:39.014Z'
+}
+{
+  level: 'info',
+  message: 'user Mary registered.',
+  timestamp: '2021-10-23T15:30:32.804Z'
+}
+{
+  level: 'info',
+  message: 'user undefined logged in. session id: kKvpPoUbYzIhyo_3ZrU-_FtslHrVarWf',
+  timestamp: '2021-10-23T15:30:33.180Z'
+}
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T15:52:27.084Z'
+}
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T15:54:11.738Z'
+}
+{
+  level: 'info',
+  message: 'user undefined logged in. session id: MYInYM3RwRGukSeuf7kH9QgPP0dzuprI',
+  timestamp: '2021-10-23T15:54:46.050Z'
+}
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T16:07:35.543Z'
+}
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T16:15:52.195Z'
+}
+{
+  level: 'info',
+  message: 'no active session. redirect to login',
+  timestamp: '2021-10-23T16:15:59.695Z'
+}
+{
+  level: 'info',
+  message: 'user 53 logged in. session id: eFi2PND4p2IciIry_ZB3SPi6QxJbu_l6',
+  timestamp: '2021-10-23T16:16:46.617Z'
+}
+{
+  level: 'info',
+  message: 'user 39 logged in session id: bfUGdAhMgxxomm89LmA06RgUy4isJOSt',
+  timestamp: '2021-10-23T16:17:15.191Z'
+}
+{
+  level: 'info',
+  message: 'user Piyal registered.',
+  timestamp: '2021-10-23T16:17:50.669Z'
+}
+{
+  level: 'info',
+  message: 'user 54 logged in. session id: 7tITaqFrOhgVsDqVowERy3Rx24z6rvn2',
+  timestamp: '2021-10-23T16:17:51.062Z'
+}
+{
+  level: 'info',
+  message: 'user 54 logged in. session id: 15ac_e4rmTJH4pLQ_W_CKqMAaEcXQIbM',
+  timestamp: '2021-10-23T16:18:06.409Z'
+}
