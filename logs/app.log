@@ -78,3 +78,8 @@
   message: 'user undefined logged in. session id: MYInYM3RwRGukSeuf7kH9QgPP0dzuprI',
   timestamp: '2021-10-23T15:54:46.050Z'
 }
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T16:07:35.543Z'
+}
