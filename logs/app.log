@@ -63,3 +63,18 @@
   message: 'user undefined logged in. session id: kKvpPoUbYzIhyo_3ZrU-_FtslHrVarWf',
   timestamp: '2021-10-23T15:30:33.180Z'
 }
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T15:52:27.084Z'
+}
+{
+  level: 'info',
+  message: 'application start on port 3000',
+  timestamp: '2021-10-23T15:54:11.738Z'
+}
+{
+  level: 'info',
+  message: 'user undefined logged in. session id: MYInYM3RwRGukSeuf7kH9QgPP0dzuprI',
+  timestamp: '2021-10-23T15:54:46.050Z'
+}

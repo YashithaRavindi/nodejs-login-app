@@ -58,7 +58,7 @@ app.get("/", (req, res) => {
       });
       logger.log(
         "info",
-        `user ${req.session.user[0].userID} logged in. session id: ${req.session.id}`
+        `user ${req.session.user[0].userid} logged in. session id: ${req.session.id}`
       );
     }
   } else {
